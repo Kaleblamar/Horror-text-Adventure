@@ -21,6 +21,7 @@ const run = document.querySelector(".run");
 const lose = document.querySelector(".lose");
 const loseAgain = document.querySelector(".loseAgain");
 const lose3 = document.querySelector(".lose3");
+const battle = document.querySelector(".battle");
 
 // buttons
 const reset = document.querySelectorAll(".reset");
@@ -44,6 +45,7 @@ const btn4b2 = document.querySelector(".btn4b2");
 const search = document.querySelector("#search");
 const fleeUp = document.querySelector("#fleeUp");
 const dawnBreaker = document.querySelector("#dawnBreaker");
+const slayVamp2 = document.querySelector("#slayVamp2");
 
 const refreshPage = () => {
   location.reload();
@@ -127,8 +129,13 @@ search.addEventListener("click", function enter() {
 });
 
 slayVamp.addEventListener("click", function enter() {
-  box8.classList.toggle("boxSlide");
+  battle.classList.toggle("boxSlide");
   fightVamp.classList.toggle("boxSlideAway");
+});
+
+slayVamp2.addEventListener("click", function enter() {
+  box8.classList.toggle("boxSlide");
+  battle.classList.toggle("boxSlideAway");
 });
 
 btn7.addEventListener("click", function enter() {

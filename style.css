@@ -158,6 +158,7 @@ button:active {
   }
   100% {
     transform: translateX(1000px);
+    opacity: 0;
   }
 }
 @media (min-width: 320px) and (max-width: 800px) {

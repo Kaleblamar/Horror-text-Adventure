@@ -1,0 +1,172 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@400;900&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+/* img {
+  filter: drop-shadow(0 0 10px red) brightness(0.4);
+  width: 300px;
+  position: relative;
+  z-index: 2;
+  display: block;
+  margin-left: auto;
+  opacity: 0.3;
+} */
+
+.box,
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box2b,
+.box3b,
+.box4b,
+.box5b,
+.box6b,
+.box7b,
+.continueOn,
+.chamber,
+.fightVamp,
+.battle,
+.run,
+.lose,
+.loseAgain,
+.lose3 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.6s ease;
+}
+
+.box2,
+.box3,
+.box4,
+.box5,
+.box6,
+.box7,
+.box8,
+.box2b,
+.box3b,
+.box4b,
+.box5b,
+.box6b,
+.box7b,
+.continueOn,
+.chamber,
+.fightVamp,
+.battle,
+.run,
+.lose,
+.loseAgain,
+.lose3 {
+  display: none;
+}
+
+.reset {
+  display: block;
+  margin: 20px auto;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: hsl(300, 30%, 12%);
+  background-image: radial-gradient(purple, blue, blue, purple);
+  background-blend-mode: multiply;
+  /* color: red; */
+  font-weight: 700;
+  font-size: 18px;
+  padding: 10px;
+  filter: drop-shadow(0 0 16px red);
+}
+
+p {
+  padding: 20px;
+  line-height: 1.5;
+  color: orangered;
+}
+h1 {
+  color: transparent;
+  background-image: linear-gradient(45deg, black, red, black);
+  -webkit-background-clip: text;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: space-around;
+
+  /* background-color: blue; */
+}
+
+button {
+  width: 45%;
+  padding: 15px;
+  border-radius: 10px;
+  border: none;
+  background-color: black;
+  filter: drop-shadow(0 0 5px red);
+  color: red;
+  transition: 0.2s ease-in-out;
+}
+button:hover {
+  cursor: pointer;
+}
+button:active {
+  transform: scale(0.8);
+}
+
+.boxSlide {
+  display: flex;
+  animation: slide 1s ease-in-out forwards;
+}
+.boxSlideAway {
+  animation: slideAway 0.6s ease-in-out forwards;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideAway {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+@media (min-width: 320px) and (max-width: 800px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .container {
+    width: 450px;
+    font-size: 16px;
+  }
+}
